@@ -17,9 +17,10 @@ def get_file_name(filepath):
 
 
 def get_file_extension_type(filepath):
+    file_name = __split_path(filepath)[1]
     try:
-        last_dot_index = int(filepath.rindex('.'))
-        return filepath[last_dot_index + 1:]
+        last_dot_index = file_name.rindex('.')
+        return file_name[last_dot_index + 1:]
     except:
         return ''
 
