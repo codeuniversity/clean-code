@@ -9,15 +9,9 @@ def get_file_directory(filepath):
 
     try:
         last_slash_index = int(filepath.rindex('/'))
+        return filepath[0: last_slash_index + 1]
     except:
-        last_slash_index = -1
-    dirName = ''
-    if last_slash_index >= 0:
-        dirName = filepath[0: last_slash_index + 1]
-    else:
-        dirName = '' #sFilename
-
-    return dirName
+        return ''
 
 
 def get_file_name(sFilename):
