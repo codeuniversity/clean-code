@@ -1,8 +1,6 @@
 import re
 
 
-# Get the File path E.g. log/cups/
-# sFile is the file path
 def get_file_directory(filepath):
     try:
         last_slash_index = int(filepath.rindex('/'))
