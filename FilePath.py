@@ -19,12 +19,10 @@ def get_file_name(filepath):
 
 def get_file_extension_type(filepath):
     try:
-        occurrences = [m.start() for m in re.finditer('\.', filepath)]
-        return filepath[occurrences[-1] + 1:]
+        last_dot_index = int(filepath.rindex('.'))
+        return filepath[last_dot_index + 1:]
     except:
-        pass
-
-    return ''
+        return ''
 
 
 assert(get_file_directory("log/cups/access_log") == "log/cups/")
