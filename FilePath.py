@@ -9,21 +9,21 @@ def get_file_directory(filepath):
         return ''
 
 
-def get_file_name(sFilename):
+def get_file_name(filepath):
     try:
-        int(sFilename.rindex('/'))
+        int(filepath.rindex('/'))
     except:
-        return sFilename
+        return filepath
 
-    pos = sFilename.rindex('/')
-    base_name = sFilename[pos + 1:]
-    return base_name
+    pos = filepath.rindex('/')
+    file_name = filepath[pos + 1:]
+    return file_name
 
 
-def get_file_extension_type(sFilename):
+def get_file_extension_type(filepath):
     try:
-        occurrences = [m.start() for m in re.finditer('\.', sFilename)]
-        return sFilename[occurrences[-1] + 1:]
+        occurrences = [m.start() for m in re.finditer('\.', filepath)]
+        return filepath[occurrences[-1] + 1:]
     except:
         pass
 
