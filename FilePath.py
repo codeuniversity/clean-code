@@ -12,7 +12,6 @@ def get_file(sFile):
     except:
         p_location = -1
     dirName = ''
-    # Karl what is this?
     if p_location >= 0:
         dirName = sFile[0: p_location + 1]
     else:
@@ -20,7 +19,7 @@ def get_file(sFile):
 
     return dirName
 
-# This function gets the file
+
 def get_filename_part(sFilename):
     try:
         int(sFilename.rindex('/'))
@@ -32,7 +31,6 @@ def get_filename_part(sFilename):
     return base_name
 
 
-#.png
 def get_file_extension_type(sFilename):
     try:
         occurrences = [m.start() for m in re.finditer('\.', sFilename)]
