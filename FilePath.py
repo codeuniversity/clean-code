@@ -1,6 +1,3 @@
-import re
-
-
 def get_file_directory(filepath):
     try:
         last_slash_index = int(filepath.rindex('/'))
