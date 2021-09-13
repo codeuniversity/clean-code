@@ -3,7 +3,7 @@ import re
 
 # Get the File path E.g. log/cups/
 # sFile is the file path
-def get_file(sFile):
+def get_file_path(sFile):
     if len(sFile) > 0 and sFile[len(sFile) - 1] == '/':
         return sFile
 
@@ -20,7 +20,7 @@ def get_file(sFile):
     return dirName
 
 
-def get_filename_part(sFilename):
+def get_file_name(sFilename):
     try:
         int(sFilename.rindex('/'))
     except:
@@ -41,14 +41,14 @@ def get_file_extension_type(sFilename):
     return ''
 
 
-assert(get_file("log/cups/access_log") == "log/cups/")
-assert(get_file("log/cups/") == "log/cups/")
-assert(get_file("cups/access_log") == "cups/")
-assert(get_file("access_log") == "")
-assert(get_filename_part("log/cups/access_log") == "access_log")
-assert(get_filename_part("log/cups/") == "")
-assert(get_filename_part("cups/access_log") == "access_log")
-assert(get_filename_part("access_log") == "access_log")
+assert(get_file_path("log/cups/access_log") == "log/cups/")
+assert(get_file_path("log/cups/") == "log/cups/")
+assert(get_file_path("cups/access_log") == "cups/")
+assert(get_file_path("access_log") == "")
+assert(get_file_name("log/cups/access_log") == "access_log")
+assert(get_file_name("log/cups/") == "")
+assert(get_file_name("cups/access_log") == "access_log")
+assert(get_file_name("access_log") == "access_log")
 assert(get_file_extension_type("log/cups/access_log") == "")
 assert(get_file_extension_type("base/FileHelper.cpp") == "cpp")
 assert(get_file_extension_type("base/FileHelper.cpp.bak") == "bak")
