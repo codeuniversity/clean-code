@@ -8,12 +8,12 @@ def get_file_path(sFile):
         return sFile
 
     try:
-        p_location = int(sFile.rindex('/'))
+        last_slash_index = int(sFile.rindex('/'))
     except:
-        p_location = -1
+        last_slash_index = -1
     dirName = ''
-    if p_location >= 0:
-        dirName = sFile[0: p_location + 1]
+    if last_slash_index >= 0:
+        dirName = sFile[0: last_slash_index + 1]
     else:
         dirName = '' #sFilename
 
