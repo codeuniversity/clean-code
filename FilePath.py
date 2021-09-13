@@ -9,11 +9,7 @@ def __split_path(filepath):
 
 
 def get_file_directory(filepath):
-    try:
-        last_slash_index = int(filepath.rindex('/'))
-        return filepath[0: last_slash_index + 1]
-    except:
-        return ''
+    return __split_path(filepath)[0]
 
 
 def get_file_name(filepath):
