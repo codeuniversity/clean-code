@@ -3,17 +3,17 @@ import re
 
 # Get the File path E.g. log/cups/
 # sFile is the file path
-def get_file_path(sFile):
-    if len(sFile) > 0 and sFile[len(sFile) - 1] == '/':
-        return sFile
+def get_file_directory(filepath):
+    if len(filepath) > 0 and filepath[len(filepath) - 1] == '/':
+        return filepath
 
     try:
-        last_slash_index = int(sFile.rindex('/'))
+        last_slash_index = int(filepath.rindex('/'))
     except:
         last_slash_index = -1
     dirName = ''
     if last_slash_index >= 0:
-        dirName = sFile[0: last_slash_index + 1]
+        dirName = filepath[0: last_slash_index + 1]
     else:
         dirName = '' #sFilename
 
@@ -41,10 +41,10 @@ def get_file_extension_type(sFilename):
     return ''
 
 
-assert(get_file_path("log/cups/access_log") == "log/cups/")
-assert(get_file_path("log/cups/") == "log/cups/")
-assert(get_file_path("cups/access_log") == "cups/")
-assert(get_file_path("access_log") == "")
+assert(get_file_directory("log/cups/access_log") == "log/cups/")
+assert(get_file_directory("log/cups/") == "log/cups/")
+assert(get_file_directory("cups/access_log") == "cups/")
+assert(get_file_directory("access_log") == "")
 assert(get_file_name("log/cups/access_log") == "access_log")
 assert(get_file_name("log/cups/") == "")
 assert(get_file_name("cups/access_log") == "access_log")
