@@ -11,13 +11,10 @@ def get_file_directory(filepath):
 
 def get_file_name(filepath):
     try:
-        int(filepath.rindex('/'))
+        last_slash_index = int(filepath.rindex('/'))
+        return filepath[last_slash_index + 1:]
     except:
         return filepath
-
-    pos = filepath.rindex('/')
-    file_name = filepath[pos + 1:]
-    return file_name
 
 
 def get_file_extension_type(filepath):
