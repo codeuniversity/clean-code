@@ -7,6 +7,7 @@ These are the code examples for the [Clean Code Quiz](https://docs.google.com/fo
 var d; // elapsed time in days
 ```
 
+
 ## Example 2
 
 ```python
@@ -27,6 +28,7 @@ def check_user_array(user):
            return ''
 ```
 
+
 ## Example 3
 
 ```javascript
@@ -40,29 +42,6 @@ function calculateTotal(priceA, priceB, taxRate) {
 
 
 ## Example 4
-
-```python
-class Rectangle:
-   height: float
-   width: float
-
-def calc_area(rectangle: Rectangle):
-   return rectangle.height * rectangle.width
-```
-
-
-## Example 5
-
-```python
-def calc_dot_product(x1, y1, z1, x2, y2, z2):
-   return x1*x2 + y1*y2 + z1*z2
-
-def are_orthogonal(x1, y1, z1, x2, y2, z2):
-   return calc_dot_product(x1, y1, z1, x2, y2, z2) == 0
-```
-
-
-## Example 6
 
 ```python
 def log_items_and_send_receipts(items, email_address):
@@ -80,27 +59,13 @@ def log_items_and_send_receipts(items, email_address):
 
    email_message = 'New Order! Total price' + str(total_price)
    server = smtplib.SMTP(smtp_server, port)
-   server.starttls(context=context)  # Secure the connection
+   server.starttls(context = context)  # Secure the connection
    server.login(sender_email, password)
    server.sendmail(sender_email, email_address, email_message)
 ```
 
 
-## Example 7
-
-```python
-GAME_BOARD = [...] # list of cells, each cell is a dict
-
-def get_flagged_cells() -> List[any]:
-   flagged_cells = []
-   for cell in GAME_BOARD:
-       if cell['STATUS_VALUE'] == FLAGGED:
-           flagged_cells.append(cell)
-
-   return flagged_cells
-```
-
-## Example 7
+## Example 5
 
 ```python
 GAME_BOARD = [...] # list of cells, each cell is a dict
@@ -115,7 +80,7 @@ def get_flagged_cells() -> List[any]:
 ```
 
 
-## Example 8
+## Example 6
 
 ```javascript
 function checkIfUserExists(userinput) {
