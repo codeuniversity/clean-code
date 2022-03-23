@@ -1,5 +1,5 @@
 # Session 2
-These are the code examples for the [Clean Code Quiz](https://docs.google.com/forms/d/1mgwag0RiKLELmxFwQkzuxUDyMZ0QVKZWWnBi9Eo5Tqg/edit)
+These are the code examples for the [Clean Code Quiz](https://docs.google.com/forms/d/1mgwag0RiKLELmxFwQkzuxUDyMZ0QVKZWWnBi9Eo5Tqg/viewform)
 
 ## Example 1
 
