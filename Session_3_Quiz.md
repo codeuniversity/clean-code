@@ -1,23 +1,30 @@
-# Session 3
-These are the code examples for the [Clean Code Quiz](https://docs.google.com/forms/d/e/1FAIpQLSe6-tVU769ID0wqwe2cELDEpXl7WW_Uk7JaruoEuPndiTPaEA/viewform)
+# Session 3 Code Examples
 
 ## Example 1
 
+A queue is a data structure that allows elements to be retrieved in the order of insertion ('FIFO' - first in first out). The following example implements a queue in python.
+
 ```python
-class Queue:
-def __init__(self):
+    def __init__(self):
+        self.__elements = []
 
-def is_empty(self):
+    def is_empty(self):
+        return len(self.__elements) == 0
 
-def pop(self):
+    def pop(self):
+        return self.__elements.pop(0)
 
-def push(self, elem):
+    def push(self, elem):
+        self.__elements.append(elem)
 
-def clear(self):
+    def clear(self):
+        self.__elements = []
 
-def peek(self):
+    def peek(self):
+        return self.__elements[0]
 
-def size(self):
+    def size(self):
+        return len(self.__elements)
 ```
 
 
@@ -48,31 +55,6 @@ createAButton(curUser);
 
 
 ## Example 3
-
-```javascript
-function createAButton(backgroundColor="red") {
-    let button = document.createElement("button");
-    button.innerHTML = "Do Something";
-    let body = document.getElementsByTagName("body")[0];
-    body.appendChild(button);
-
-    button.style.background = backgroundColor;
-
-    button.addEventListener ("click", function() {
-        alert("did something");
-    });
-}
-[...]
-
-# Usage
-if curUser.message == "Hello") {
-    createAButton(user.customColor);
-} else {
-    createAButton();
-}
-```
-
-
 
 
 
