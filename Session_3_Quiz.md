@@ -51,29 +51,3 @@ class Queue:
         return len(self.__elements)
 ```
 
-## Example 4
-
-```javascript
-function createAButton(user) {
-    let button = document.createElement("button");
-    button.innerHTML = "Do Something";
-    let body = document.getElementsByTagName("body")[0];
-    body.appendChild(button);
-
-    if(user.message == "Hello") {
-        button.style.background = user.customColor;
-    } else {
-        button.style.background = "red";
-    }
-
-    button.addEventListener ("click", function() {
-        alert("did something");
-    });
-}
-[...]
-
-# Usage
-createAButton(curUser);
-```
-
-
