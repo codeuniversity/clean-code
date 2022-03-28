@@ -4,7 +4,6 @@ This is the code example for the [Clean Code Social_Media_Platform_Challenge](ht
 ```python
 import datetime
 import post_database
-from PIL import Image
 
 class Post:
     def __init__(self, author: str, text: str, image: Image.Image, date: datetime.date):
