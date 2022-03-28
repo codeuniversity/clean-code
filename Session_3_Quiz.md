@@ -2,9 +2,33 @@
 
 ## Example 1
 
+```python
+class Rectangle:
+   height: float
+   width: float
+
+def calc_area(rectangle: Rectangle):
+   return rectangle.height * rectangle.width
+```
+
+## Example 2
+
+Hint: If you don't know what a dot product is, quickly google it.
+
+```python
+def calc_dot_product(x1, y1, z1, x2, y2, z2):
+   return x1*x2 + y1*y2 + z1*z2
+
+def are_orthogonal(x1, y1, z1, x2, y2, z2):
+   return calc_dot_product(x1, y1, z1, x2, y2, z2) == 0
+```
+
+## Example 3
+
 A queue is a data structure that allows elements to be retrieved in the order of insertion ('FIFO' - first in first out). The following example implements a queue in python.
 
 ```python
+class Queue:
     def __init__(self):
         self.__elements = []
 
@@ -27,8 +51,7 @@ A queue is a data structure that allows elements to be retrieved in the order of
         return len(self.__elements)
 ```
 
-
-## Example 2
+## Example 4
 
 ```javascript
 function createAButton(user) {
@@ -52,9 +75,5 @@ function createAButton(user) {
 # Usage
 createAButton(curUser);
 ```
-
-
-## Example 3
-
 
 
