@@ -11,6 +11,12 @@ var d; // elapsed time in days
 ## Example 2
 
 ```python
+// Subtract discount from price.
+finalPrice = (numItems * itemPrice) - min(5, numItems) * itemPrice * 0.1
+
+## Example 3
+
+```python
 def check_user_array(user):
    if user['data']['name']['first']:
        first_name = user['data']['name']['first']
@@ -29,7 +35,7 @@ def check_user_array(user):
 ```
 
 
-## Example 3
+## Example 4
 
 ```javascript
 function calculateTotal(priceA, priceB, taxRate) {
@@ -41,7 +47,7 @@ function calculateTotal(priceA, priceB, taxRate) {
 ```
 
 
-## Example 4
+## Example 5
 
 ```python
 def log_items_and_send_receipts(items, email_address):
@@ -65,7 +71,7 @@ def log_items_and_send_receipts(items, email_address):
 ```
 
 
-## Example 5
+## Example 6
 
 ```python
 GAME_BOARD = [...] # list of cells, each cell is a dict
@@ -80,7 +86,7 @@ def get_flagged_cells() -> List[any]:
 ```
 
 
-## Example 6
+## Example 7
 
 ```python
 response = server.Call(request)
@@ -103,7 +109,7 @@ else:
 ```
 
 
-## Example 7
+## Example 8
 
 ```C
 float InvSqrt(float x){
