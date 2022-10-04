@@ -82,22 +82,25 @@ def get_flagged_cells() -> List[any]:
 
 ## Example 6
 
-```javascript
-function checkIfUserExists(userinput) {
-    if (userinput === null) {
-        return false;
-    }
-
-    checkUser(userinput);
-    calculateProfileStyles();
-
-    const profileData = new FormData();
-    const profileField = document.querySelector('input[type="file"]');
-
-    profileData.append('username', userinput.name);
-    profileData.append('avatar', profileField.files[0]);
-    return profileData;
-}
+```python
+response = server.Call(request)
+ 
+if response.GetStatus() == RPC.OK:
+  if response.GetAuthorizedUser():
+    if response.GetEnc() == 'utf-8':
+      if response.GetRows():
+        vals = [ParseRow(r) for r in 
+                response.GetRows()]
+        avg = sum(vals) / len(vals)
+        return avg, vals
+      else:
+        raise EmptyError()
+    else:
+      raise AuthError('unauthorized')
+  else:
+    raise ValueError('wrong encoding')
+else:
+  raise RpcError(response.GetStatus())
 ```
 
 
