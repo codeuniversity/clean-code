@@ -13,6 +13,7 @@ var d; // elapsed time in days
 ```python
 // Subtract discount from price.
 finalPrice = (numItems * itemPrice) - min(5, numItems) * itemPrice * 0.1
+```
 
 ## Example 3
 
