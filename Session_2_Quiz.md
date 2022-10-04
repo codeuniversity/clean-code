@@ -89,8 +89,7 @@ if response.GetStatus() == RPC.OK:
   if response.GetAuthorizedUser():
     if response.GetEnc() == 'utf-8':
       if response.GetRows():
-        vals = [ParseRow(r) for r in 
-                response.GetRows()]
+        vals = [ParseRow(r) for r in response.GetRows()]
         avg = sum(vals) / len(vals)
         return avg, vals
       else:
