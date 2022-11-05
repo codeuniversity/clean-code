@@ -1,5 +1,7 @@
 # Session 2
-These are the code examples for the [Clean Code Quiz](https://docs.google.com/forms/d/1mgwag0RiKLELmxFwQkzuxUDyMZ0QVKZWWnBi9Eo5Tqg/viewform)
+These are the code examples for the [Clean Code Quiz](https://docs.google.com/forms/d/1mgwag0RiKLELmxFwQkzuxUDyMZ0QVKZWWnBi9Eo5Tqg/viewform). 
+
+For each example, look at the code and list bad smells. If you have an idea, describe how you would improve the code as well. Most - but not all - smells are listed in the Refactoring book. If you can, use Fowler's names for the smells.
 
 ## Example 1
 
