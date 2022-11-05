@@ -112,7 +112,11 @@ else:
 ```
 
 
-## Example 8
+## Example 8: Bonus
+
+Is this code clean? Why/why not?
+
+[Explanation of what this code does](https://betterexplained.com/articles/understanding-quakes-fast-inverse-square-root/)
 
 ```C
 float InvSqrt(float x){
