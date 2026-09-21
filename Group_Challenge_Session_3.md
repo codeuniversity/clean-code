@@ -1,5 +1,5 @@
 # Session 3: Social Media Platform Example 
-This is the code example for the [Clean Code Social_Media_Platform_Challenge](https://docs.google.com/forms/d/e/1FAIpQLSfWlOHMUhS9XW1XHYC569p7mibWcv91iB5EBf1Bt-Vv8pwRxw/viewform)
+This is the code example for the Clean Code Social_Media_Platform_Challenge (link in slack)
 
 ```python
 import datetime
